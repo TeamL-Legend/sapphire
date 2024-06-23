@@ -74,46 +74,56 @@ iframe {
     border-radius: 20px;
 }
 
-.btns{
+.btns {
     display: flex;
     justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
 }
 
-.button{
+.button {
     background-color: #5e45a5;
     color: white;
-    border-radius: 20px;  
+    border-radius: 20px;
     margin-top: 5px;
     border: none;
     height: 40px;
 }
 
-.button:active{
+.button:active {
     background-color: #00b7ffa8;
     color: white;
-    border-radius: 20px;  
+    border-radius: 20px;
     margin-top: 5px;
 }
 
-@media (max-width: 450px){
-    iframe{
+@media (max-width: 450px) {
+    iframe {
         width: 150px;
         height: 100px;
     }
 }
 
-@media (min-width: 451px){
-    iframe{
+@media (min-width: 451px) {
+    iframe {
         width: 200px;
         height: 150px;
     }
 }
 
-@media (min-width: 768px){
-    iframe{
+@media (min-width: 768px) {
+    iframe {
         width: 300px;
         height: 200px;
     }
+}
+
+.news {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.newscontainer {
+    background-color: #5f45a5a9;
+    text-align: center;
 }
