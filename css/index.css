@@ -1,5 +1,7 @@
 body {
-background-image: url(background.png);
+    background-color: #1100fd4b;
+    background-image: url(../assets/background.png);
+    font-family: monospace;
 }
 
 .navbar {
@@ -197,13 +199,13 @@ iframe {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
     .news {
-        width: 320px;
+        width: 370px;
     }
 
     .newscontainer {
-        width: 300px;
+        width: 350px;
         justify-content: center;
         align-items: center;
     }
