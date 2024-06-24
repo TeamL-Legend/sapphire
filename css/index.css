@@ -198,7 +198,7 @@ iframe {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .news {
         width: 370px;
     }
