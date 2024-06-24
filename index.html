@@ -41,7 +41,7 @@
                                 Расскрыть список
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Разработка</a></li>
+                                <li><button class="dropdown-item " href="#">Настройки</button></li>
                                 <li><a class="dropdown-item" href="#">Разработка</a></li>
                                 <li><a class="dropdown-item" href="#">Разработка</a></li>
                             </ul>
@@ -52,6 +52,11 @@
         </nav>
     </header>
     <main>
+        <div>
+            <br>
+            <br>
+            <br>
+        </div>
         <div id="moments" class="container animate_animated animate__backInLeft">
             <div class="momentscontainer">
                 <span>Моменты</span>
@@ -67,10 +72,10 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
             </div>
         </div>
-        <div class="news">
+        <div class="news container">
             <span>Лента новостей</span>
         </div>
-        <div class="newscontainer">
+        <div class="container newscontainer">
 
             <div class="newsone">
                 <span>
@@ -96,7 +101,7 @@
             <textarea id="input" class="form-control" type="text"
                 placeholder="Бесплатная версия расчитана на 58 символов, премиум на безлимит" maxlength="58"></textarea>
         </div>
-        <span id="resultcrypt"></span>
+        <span id="resultcrypt" class="resultcrypt"></span>
         <div class="btns">
 
             <button id="cryptbtn" class="button">Криптовать</button>
@@ -104,7 +109,11 @@
         </div>
     </main>
     <footer>
-
+        <div class="footercontainer">
+            <div class="links">
+                <span>Тут будут ссылки на соц сети, а также компания, лицензии и тд</span>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
