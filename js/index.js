@@ -2,6 +2,10 @@ let inputInput = document.querySelector(`#input`);
 let resultcryptNode = document.querySelector(`#resultcrypt`);
 let cryptbtnNode = document.querySelector(`#cryptbtn`);
 
+inputInput.addEventListener(`input`, function () {
+    inputInput.value = inputInput.value.toLowerCase();
+});
+
 cryptbtnNode.addEventListener(`click`, function () {
     let crypt = inputInput.value
     crypt = crypt.replaceAll(`а`, `f`);
@@ -61,4 +65,41 @@ decryptbtnNode.addEventListener(`click`, function () {
     crypt = crypt.replaceAll(`f`, `а`);
     resultcryptNode.innerHTML = crypt;
     inputInput.value = ``;
+});
+
+let settingsbtnNode = document.querySelector(`.settingsbtn`);
+settingsbtnNode.addEventListener(`click`, function () {
+    let newscontainerNode = document.querySelector(`.newscontainer`);
+    let newsNode = document.querySelector(`.news`);
+    let containerNode = document.querySelector(`.container`);
+    let settingscontainerNode = document.querySelector(`.settingscontainer`);
+    newscontainerNode.classList.toggle(`none`);
+    newsNode.classList.toggle(`none`);
+    containerNode.classList.toggle(`none`);
+    settingscontainerNode.classList.toggle(`none`);
+});
+
+let themeInput = document.querySelector(`.theme`);
+themeInput.addEventListener(`click`, function () {
+    let momentsNode = document.querySelector(`.moments`);
+    let bgnavbarNode = document.querySelector(`.bgnavbar`);
+    let newsNode = document.querySelector(`.news`);
+    let newscontainerNode = document.querySelector(`.newscontainer`);
+    let settingscontainerNode = document.querySelector(`.settingscontainer`);
+    let bodyNode = document.querySelector(`.body`);
+    if (themeInput = document.querySelector(`.theme`).checked) {
+        newscontainerNode.classList.add(`ruby`);
+        momentsNode.classList.add(`ruby`);
+        newsNode.classList.add(`ruby`);
+        bgnavbarNode.classList.add(`ruby`);
+        settingscontainerNode.classList.add(`ruby`);
+        bodyNode.classList.add(`backgroundruby`);
+    } else {
+        newscontainerNode.classList.remove(`ruby`);
+        momentsNode.classList.remove(`ruby`);
+        newsNode.classList.remove(`ruby`);
+        bgnavbarNode.classList.remove(`ruby`);
+        settingscontainerNode.classList.remove(`ruby`);
+        bodyNode.classList.remove(`backgroundruby`);
+    }
 });

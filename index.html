@@ -13,7 +13,7 @@
     <script src="js/index.js" defer></script>
 </head>
 
-<body>
+<body class="body">
     <header>
         <nav class="navbar navbar-expand-lg bgnavbar navbar-dark">
             <div class="container-fluid">
@@ -41,8 +41,8 @@
                                 Расскрыть список
                             </a>
                             <ul class="dropdown-menu">
-                                <li><button class="dropdown-item " href="#">Настройки</button></li>
-                                <li><a class="dropdown-item" href="#">Разработка</a></li>
+                                <li><button class="dropdown-item settingsbtn">Настройки</button></li>
+                                <li><input type="text" placeholder="Промокод" class="dropdown-item form-control"></li>
                                 <li><a class="dropdown-item" href="#">Разработка</a></li>
                             </ul>
                         </li>
@@ -56,6 +56,16 @@
             <br>
             <br>
             <br>
+        </div>
+        <div class="settingscontainer none">
+            
+            <div class="settings form-switch">
+            <span class="settingslogo">Настройки</span><br>
+            <span class="changetheme">Сменить тему:</span>
+<span class="sapphire">sapphire</span>
+<input type="checkbox" role="switch" class="form-check-input theme">
+<span class="ruby">ruby</span>
+            </div>
         </div>
         <div id="moments" class="container animate_animated animate__backInLeft">
             <div class="momentscontainer">
@@ -76,7 +86,6 @@
             <span>Лента новостей</span>
         </div>
         <div class="container newscontainer">
-
             <div class="newsone">
                 <span>
                     Новости появятся позже

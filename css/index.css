@@ -1,6 +1,6 @@
 body {
     background-color: #1100fd4b;
-    background-image: url(../assets/background.png);
+    background-image: url(../assets/backgroundsapphire.png);
     font-family: monospace;
 }
 
@@ -17,6 +17,7 @@ body {
 .container {
     animation: backInLeft;
     animation-duration: 1s;
+
 }
 
 .momentscontainer {
@@ -102,6 +103,7 @@ iframe {
     border: none;
     height: 40px;
     border: 2px solid #00eeff;
+    user-select: none;
 }
 
 .button:active {
@@ -218,4 +220,52 @@ iframe {
     justify-content: center;
     width: 100%;
     margin-top: 5px;
+}
+
+.settingscontainer {
+    display: flex;
+    color: white;
+    width: 100%px;
+    height: 100vh;
+    background-color: #5f45a5b0;
+    justify-content: center;
+}
+
+.settingslogo {
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.sapphire {
+    margin-right: 40px;
+}
+
+.theme{
+    background-color: #00eeff;
+}
+
+.theme:checked{
+    background-color: #fc3535;
+}
+
+.changetheme{
+    margin-right: 100px;
+}
+
+.none{
+    display: none;
+}
+
+.ruby{
+    background-color: #fc3535c0;
+    transition: 1s;
+}
+
+.sapphire{
+    background-color: #5f45a5b0;
+}
+
+.backgroundruby{
+    background-image: url(../assets/backgroundruby.png);
 }
