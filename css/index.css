@@ -198,6 +198,19 @@ iframe {
     }
 }
 
+@media (max-width: 450px) {
+    .news {
+        width: 370px;
+    }
+
+    .newscontainer {
+        width: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
 .resultcrypt {
     display: flex;
     color: white;
