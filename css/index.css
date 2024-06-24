@@ -200,11 +200,11 @@ iframe {
 
 @media (max-width: 600px) {
     .news {
-        width: 370px;
+        width: 320px;
     }
 
     .newscontainer {
-        width: 350px;
+        width: 300px;
         justify-content: center;
         align-items: center;
     }
