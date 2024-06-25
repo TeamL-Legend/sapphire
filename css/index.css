@@ -114,21 +114,21 @@ iframe {
 
 @media (max-width: 450px) {
     iframe {
-        width: 150px;
+        width: 100px;
         height: 100px;
     }
 }
 
 @media (min-width: 451px) {
     iframe {
-        width: 200px;
+        width: 150px;
         height: 150px;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 990px) {
     iframe {
-        width: 300px;
+        width: 200px;
         height: 200px;
     }
 }
@@ -182,11 +182,11 @@ iframe {
 
 @media (min-width: 991px) {
     .moments {
-        width: 700px;
+        width: 950px;
     }
 
     .momentscontainer {
-        width: 700px;
+        width: 900px;
         margin-top: 40px;
     }
 
@@ -198,6 +198,11 @@ iframe {
 
     .news {
         width: 720px;
+    }
+
+    iframe{
+        width: 300px;
+        height: 200px;
     }
 }
 
