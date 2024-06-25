@@ -73,10 +73,16 @@ settingsbtnNode.addEventListener(`click`, function () {
     let newsNode = document.querySelector(`.news`);
     let containerNode = document.querySelector(`.container`);
     let settingscontainerNode = document.querySelector(`.settingscontainer`);
+    let musicdayNode = document.querySelector(`.musicday`);
+    let btnsNode = document.querySelector(`.btns`);
+    let chatInput = document.querySelector(`.chatinput`);
     newscontainerNode.classList.toggle(`none`);
     newsNode.classList.toggle(`none`);
     containerNode.classList.toggle(`none`);
     settingscontainerNode.classList.toggle(`none`);
+    musicdayNode.classList.toggle(`none`);
+    btnsNode.classList.toggle(`none`);
+    inputInput.classList.toggle(`none`);
 });
 
 let themeInput = document.querySelector(`.theme`);
@@ -102,4 +108,14 @@ themeInput.addEventListener(`click`, function () {
         settingscontainerNode.classList.remove(`ruby`);
         bodyNode.classList.remove(`backgroundruby`);
     }
+});
+
+let chatInput = document.querySelector(`.chatinput`);
+let chatInputSwitch = document.querySelector(`.chat`);
+chatInputSwitch.addEventListener(`click`, function(){
+if(chatInputSwitch = document.querySelector(`.chat`).checked){
+    chatInput.classList.remove(`none`);
+} else {
+    chatInput.classList.add(`none`);
+}
 });

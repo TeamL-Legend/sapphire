@@ -17,8 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bgnavbar navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="logo" src="icons.png" alt="logo"
-                        width="24px">sapphire</a>
+                <a class="navbar-brand" href="#"><img class="logo" src="icons.png" alt="logo" width="24px">sapphire</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -58,13 +57,21 @@
             <br>
         </div>
         <div class="settingscontainer none">
-            
+
             <div class="settings form-switch">
-            <span class="settingslogo">Настройки</span><br>
-            <span class="changetheme">Сменить тему:</span>
-<span class="sapphire">sapphire</span>
-<input type="checkbox" role="switch" class="form-check-input theme">
-<span class="ruby">ruby</span>
+                <span class="settingslogo">Настройки</span><br>
+                <span class="changetheme">Сменить тему:</span>
+                <span class="sapphire">sapphire</span>
+                <input type="checkbox" role="switch" class="form-check-input theme">
+                <span class="ruby">ruby</span><br>
+                <span class="systemcrypt">Система криптования:</span>
+                <span class="ds">2ds</span>
+                <input type="checkbox" role="switch" class="form-check-input dsds">
+                <span class="ds">3ds</span><br>
+                <span class="chatenable">Включить чат:</span>
+                <span class="off">выкл</span>
+                <input type="checkbox" role="switch" class="form-check-input chat">
+                <span class="on">вкл</span>
             </div>
         </div>
         <div id="moments" class="container animate_animated animate__backInLeft">
@@ -116,6 +123,15 @@
             <button id="cryptbtn" class="button">Криптовать</button>
             <button id="decryptbtn" class="button">Декриптовать</button>
         </div>
+            <div class="container containerchat">
+                <div class="chatinput none">
+                    <input placeholder="Фамилия Имя" type="text" class="form-control">
+                    <div>
+                        <textarea placeholder="Сообщение" class="form-control" type="text" maxlength="58"></textarea>
+                        <button class="button sendbutton">Оправить</button>
+                    </div>
+                </div>
+            </div>
     </main>
     <footer>
         <div class="footercontainer">

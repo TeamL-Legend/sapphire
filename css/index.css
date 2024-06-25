@@ -241,31 +241,69 @@ iframe {
     margin-right: 40px;
 }
 
-.theme{
-    background-color: #00eeff;
+.theme {
+    background-color: #5f45a5b0;
 }
 
-.theme:checked{
+.theme:checked {
     background-color: #fc3535;
 }
 
-.changetheme{
-    margin-right: 100px;
+.changetheme {
+    margin-right: 10px;
 }
 
-.none{
+.none {
     display: none;
 }
 
-.ruby{
+.ruby {
     background-color: #fc3535c0;
     transition: 1s;
 }
 
-.sapphire{
+.sapphire {
     background-color: #5f45a5b0;
 }
 
-.backgroundruby{
+.backgroundruby {
     background-image: url(../assets/backgroundruby.png);
+}
+
+.ds {
+    margin-right: 40px;
+}
+
+.off {
+    margin-right: 40px;
+}
+
+.chat {
+    background-color: #5f45a5b0;
+}
+
+.dsds {
+    background-color: #5f45a5b0
+}
+
+.chat:checked {
+    background-color: #fc3535;
+}
+
+.dsds:checked {
+    background-color: #fc3535;
+}
+
+.containerchat {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sendbutton {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
 }
