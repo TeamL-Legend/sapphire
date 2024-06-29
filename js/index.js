@@ -112,10 +112,34 @@ themeInput.addEventListener(`click`, function () {
 
 let chatInput = document.querySelector(`.chatinput`);
 let chatInputSwitch = document.querySelector(`.chat`);
-chatInputSwitch.addEventListener(`click`, function(){
-if(chatInputSwitch = document.querySelector(`.chat`).checked){
-    chatInput.classList.remove(`none`);
-} else {
-    chatInput.classList.add(`none`);
-}
+let spannoneNode = document.querySelector(`.spannone`);
+let nonecommentsNode = document.querySelector(`.nonecomments`);
+chatInputSwitch.addEventListener(`click`, function () {
+    if (chatInputSwitch = document.querySelector(`.chat`).checked) {
+        chatInput.classList.remove(`none`);
+        spannoneNode.classList.remove(`none`);
+        nonecommentsNode.classList.remove(`none`);
+    } else {
+        chatInput.classList.add(`none`);
+        spannoneNode.classList.add(`none`);
+        nonecommentsNode.classList.add(`none`);
+    }
+});
+
+let sendbuttonNode = document.querySelector(`.sendbutton`);
+sendbuttonNode.addEventListener(`click`, function () {
+    let commentsNode = document.querySelector(`.comments`);
+    let nameInput = document.querySelector(`.name`);
+    let textnameInput = document.querySelector(`.textname`);
+    let name = nameInput.value
+    let textname = textnameInput.value
+    nameInput = nameInput.value;
+    textnameInput = textnameInput.value;
+    commentsNode.innerHTML += `
+<div class="comments">
+<span class="name">Имя Фамилия: </span>
+${name}<br>
+<span class="textname">Сообщение: </span>
+${textname}
+<div>`
 });

@@ -17,7 +17,6 @@ body {
 .container {
     animation: backInLeft;
     animation-duration: 1s;
-
 }
 
 .momentscontainer {
@@ -163,7 +162,7 @@ iframe {
 }
 
 
-.newsone{
+.newsone {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,7 +200,7 @@ iframe {
         width: 720px;
     }
 
-    iframe{
+    iframe {
         width: 300px;
         height: 200px;
     }
@@ -312,4 +311,36 @@ iframe {
     align-items: center;
     margin: auto;
     margin-top: 10px;
+}
+
+.containercomments {
+    background-color: #977ae600;
+    color: white;
+    display: block;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spancomments {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5f45a5b0;
+    color: white;
+    justify-content: center;
+}
+
+.comments {
+    background-color: #5f45a5;
+    height: 200px;
+    align-items: center;
+    border-radius: 20px;
+    display: block;
+
+}
+
+.name {
+    margin-left: auto;
+    margin-right: auto;
 }
