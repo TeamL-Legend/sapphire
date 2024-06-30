@@ -1,46 +1,88 @@
-body{
+body {
     background-color: black;
     color: white;
     font-family: monospace;
     font-size: 24px;
+    user-select: none;
 }
 
-.container{
+.container {
     height: 50vh;
 }
 
-.main{
-    margin-top: 300px;
+.main {
+    margin-top: 250px;
 }
 
-.logo{
-display: flex;
-justify-content: center;
+.logo {
+    display: flex;
+    justify-content: center;
+
 }
 
-.textlogo{
+.textlogo {
     text-align: center;
+
 }
 
-.btn{
+.btnss {
+    display: flex;
     background-color: black;
     color: white;
     border-radius: 20px;
     width: 100px;
     height: 30px;
-    border: 1px solid #00d9ff94;
-    margin-top: 10px;
+    border: 2px solid #00d9ff94;
+    margin-top: 30px;
+    justify-content: center;
+    margin: auto;
+    font-size: 16px;
 }
 
-.btn:active{
+a {
+    text-decoration: none;
+}
+
+.btnss:active {
     background-color: #00d9ff94;
 }
 
-.divpreviewcontainer{
+.divpreviewcontainer {
     animation: fadeInUp;
     animation-duration: 2s;
 }
 
-img{
-box-shadow: 5px 5px 5px red;
+img {
+    background: #2fb3ff;
+    box-shadow: 0 0 100px #2fb3ff;
+    border-radius: 10px;
+}
+
+.nextbtn {
+    background-color: black;
+    color: white;
+    border: 2px solid #ffff0093;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.nextbtn:active {
+    background-color: #ffff0093;
+}
+
+.none {
+    display: none;
+}
+
+.step2 {
+    transition: 2s;
+    scroll-behavior: smooth;
+}
+
+#none {
+    margin-top: 700px;
+    margin-bottom: 250px;
 }
