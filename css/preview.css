@@ -77,11 +77,6 @@ img {
     display: none;
 }
 
-.step2 {
-    transition: 2s;
-    scroll-behavior: smooth;
-}
-
 #none {
     margin-top: 700px;
     margin-bottom: 250px;
