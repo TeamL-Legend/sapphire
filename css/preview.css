@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    font-size: 24px;
+}
+
+.container{
+    height: 50vh;
+}
+
+.main{
+    margin-top: 300px;
+}
+
+.logo{
+display: flex;
+justify-content: center;
+}
+
+.textlogo{
+    text-align: center;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #00d9ff94;
+    margin-top: 10px;
+}
+
+.btn:active{
+    background-color: #00d9ff94;
+}
