@@ -35,3 +35,12 @@ justify-content: center;
 .btn:active{
     background-color: #00d9ff94;
 }
+
+.divpreviewcontainer{
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+
+img{
+box-shadow: 5px 5px 5px red;
+}
