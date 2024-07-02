@@ -81,3 +81,17 @@ img {
     margin-top: 700px;
     margin-bottom: 250px;
 }
+
+.aaa{
+    color: gray;
+    font-size: 15px;
+    background-color: #1b1b1b;
+    border-radius: 20px;
+}
+
+.href{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 280px;
+
+}
