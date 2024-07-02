@@ -11,13 +11,13 @@ playNode.addEventListener(`click`, function () {
         audioNode.pause();
         playdivNode.classList.remove(`player`);
         musicimgNode.classList.remove(`activate`);
-        playNode.src = `/assets/play.png`;
+        playNode.src = `./assets/play.png`;
         
     } else {
         playdivNode.classList.add(`player`);
         musicimgNode.classList.add(`activate`);
         audioNode.play();
-        playNode.src = `/assets/pause.png`;
+        playNode.src = `./assets/pause.png`;
     }
 });
 
