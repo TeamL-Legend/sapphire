@@ -12,6 +12,7 @@ let backNode = document.querySelector(`.back`);
     let plert = `Сообщение от сервера, DDOS был остановлен обновленной системой sapphire, DDOS QUARD COMPLETE, сервера востоновленны`
     alert(plert)
 }())
+
 const musics = [`Run Run Run`, `supersonic`, `Marmalade`, `crimson lada`, `Am I with you`, `scorpion`, `gift`, `finish`, `bad girl`];
 let musicNumber = Math.floor(Math.random() * musics.length)
 
