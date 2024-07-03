@@ -8,22 +8,22 @@ let musicnameNode = document.querySelector(`.musicname`);
 let nextNode = document.querySelector(`.next`);
 let backNode = document.querySelector(`.back`);
 
-const musics = [`Run Run Run`, `supersonic`, `Marmalade`, `crimson lada`, `Am I with you`,`scorpion`, `gift`, `finish`, `bad girl`]
-let musicNumber = 0
+const musics = [`Run Run Run`, `supersonic`, `Marmalade`, `crimson lada`, `Am I with you`, `scorpion`, `gift`, `finish`, `bad girl`];
+let musicNumber = Math.floor(Math.random() * musics.length)
 
-function loadMusic(music){
-musicnameNode.innerHTML = music;
-audioNode.src = `assets/${music}.mp3`
-musicimgNode.innerHTML = music
+function loadMusic(music) {
+    musicnameNode.innerHTML = music;
+    audioNode.src = `assets/${music}.mp3`
+    musicimgNode.innerHTML = music
 }
 
 loadMusic(musics[musicNumber])
 
-function nextMusic(){
+function nextMusic() {
     musicNumber ++;
-    if (musicNumber > musics.length -1){
+    if (musicNumber > musics.length - 1) {
         musicNumber = 0
-    }   
+    }
     loadMusic(musics[musicNumber])
     audioNode.play()
     playNode.src = `./assets/pause.png`;
@@ -33,11 +33,11 @@ function nextMusic(){
 
 nextNode.addEventListener(`click`, nextMusic)
 
-function backMusic(){
-    musicNumber --;
-    if (musicNumber < 0){
-        musicNumber = musics.length -1;
-    }    
+function backMusic() {
+    musicNumber--;
+    if (musicNumber < 0) {
+        musicNumber = musics.length - 1;
+    }
     loadMusic(musics[musicNumber])
     audioNode.play()
     playNode.src = `./assets/pause.png`;
@@ -53,7 +53,7 @@ playNode.addEventListener(`click`, function () {
         playdivNode.classList.remove(`player`);
         musicimgNode.classList.remove(`activate`);
         playNode.src = `./assets/play.png`;
-        
+
     } else {
         playdivNode.classList.add(`player`);
         musicimgNode.classList.add(`activate`);
@@ -62,19 +62,19 @@ playNode.addEventListener(`click`, function () {
     }
 });
 
-function progressbar(e){
-   let {duration, currentTime} = e.srcElement
-   let progressbarprocent = (currentTime / duration) * 100
-   progressbarNode.style.width = `${progressbarprocent}%`
+function progressbar(e) {
+    let { duration, currentTime } = e.srcElement
+    let progressbarprocent = (currentTime / duration) * 100
+    progressbarNode.style.width = `${progressbarprocent}%`
 }
 
 audioNode.addEventListener(`timeupdate`, progressbar);
 
-function progres(e){
+function progres(e) {
     let width = this.clientWidth;
     let cX = e.offsetX
     let duration = audioNode.duration
-    
+
 
     audioNode.currentTime = (cX / width) * duration
 }
