@@ -4,6 +4,47 @@ let playdivNode = document.querySelector(`.playdiv`);
 let musicimgNode = document.querySelector(`.musicimg`);
 let progressbarNode = document.querySelector(`.procentbar`);
 let progresscontainerNode = document.querySelector(`.progressbar`);
+let musicnameNode = document.querySelector(`.musicname`);
+let nextNode = document.querySelector(`.next`);
+let backNode = document.querySelector(`.back`);
+
+const musics = [`Run Run Run`, `supersonic`, `Marmalade`, `crimson lada`, `Am I with you`,`scorpion`, `gift`, `finish`, `bad girl`]
+let musicNumber = 0
+
+function loadMusic(music){
+musicnameNode.innerHTML = music;
+audioNode.src = `assets/${music}.mp3`
+musicimgNode.innerHTML = music
+}
+
+loadMusic(musics[musicNumber])
+
+function nextMusic(){
+    musicNumber ++;
+    if (musicNumber > musics.length -1){
+        musicNumber = 0
+    }   
+    loadMusic(musics[musicNumber])
+    audioNode.play()
+    playNode.src = `./assets/pause.png`;
+    musicimgNode.classList.add(`activate`);
+
+}
+
+nextNode.addEventListener(`click`, nextMusic)
+
+function backMusic(){
+    musicNumber --;
+    if (musicNumber < 0){
+        musicNumber = musics.length -1;
+    }    
+    loadMusic(musics[musicNumber])
+    audioNode.play()
+    playNode.src = `./assets/pause.png`;
+    musicimgNode.classList.add(`activate`);
+}
+
+backNode.addEventListener(`click`, backMusic)
 
 playNode.addEventListener(`click`, function () {
     let isplayer = playdivNode.classList.contains(`player`);
@@ -42,5 +83,5 @@ progresscontainerNode.addEventListener(`click`, progres);
 
 
 
-audioNode.addEventListener(`ended`);
+audioNode.addEventListener(`ended`, nextMusic);
 
