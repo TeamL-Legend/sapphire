@@ -8,17 +8,19 @@ let musicnameNode = document.querySelector(`.musicname`);
 let nextNode = document.querySelector(`.next`);
 let backNode = document.querySelector(`.back`);
 
+
 (function(){
-    let plert = `Сообщение от сервера, DDOS был остановлен обновленной системой sapphire, DDOS QUARD COMPLETE, сервера востоновленны`
-    alert(plert)
+let plert = `Сообщение от сервера, DDOS был остановлен обновленной системой sapphire, DDOS QUARD COMPLETE, сервера востоновленны`
+    alert(plert);
 }())
 
-const musics = [`Run Run Run`, `supersonic`, `Marmalade`, `crimson lada`, `Am I with you`, `scorpion`, `gift`, `finish`, `bad girl`];
+
+const musics = [`Run Run Run`, `supersonic`, `Marmalade`, `crimson lada`, `Am I with you`, `scorpion`, `gift`, `finish`, `bad girl`, `She's close`, `dances`, `asphalt 8`];
 let musicNumber = Math.floor(Math.random() * musics.length)
 
 function loadMusic(music) {
     musicnameNode.innerHTML = music;
-    audioNode.src = `assets/${music}.mp3`
+    audioNode.src = `audio/${music}.mp3`
     musicimgNode.innerHTML = music
 }
 
@@ -31,7 +33,7 @@ function nextMusic() {
     }
     loadMusic(musics[musicNumber])
     audioNode.play()
-    playNode.src = `./assets/pause.png`;
+    playNode.src = `./assets/pause.svg`;
     musicimgNode.classList.add(`activate`);
 
 }
@@ -45,7 +47,7 @@ function backMusic() {
     }
     loadMusic(musics[musicNumber])
     audioNode.play()
-    playNode.src = `./assets/pause.png`;
+    playNode.src = `./assets/pause.svg`;
     musicimgNode.classList.add(`activate`);
 }
 
@@ -57,13 +59,13 @@ playNode.addEventListener(`click`, function () {
         audioNode.pause();
         playdivNode.classList.remove(`player`);
         musicimgNode.classList.remove(`activate`);
-        playNode.src = `./assets/play.png`;
+        playNode.src = `./assets/play.svg`;
 
     } else {
         playdivNode.classList.add(`player`);
         musicimgNode.classList.add(`activate`);
         audioNode.play();
-        playNode.src = `./assets/pause.png`;
+        playNode.src = `./assets/pause.svg`;
     }
 });
 

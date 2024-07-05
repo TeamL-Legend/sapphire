@@ -95,3 +95,13 @@ img {
     margin-bottom: 250px;
 
 }
+
+.musicbtn{
+    background-color: #181717;
+    border: 2px solid #ffff0093;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

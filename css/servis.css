@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background-color: #181818;
+    font-family: 'Helvetica';
+    color: white;
+}
+
+.mscrunner {
+    max-height: 80px;
+
+    .pbaro {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 15px;
+        background-color: #6d6d6e;
+    }
+
+    .pbari {
+        height: 15px;
+        background-color: #e6c016;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        background-color: #181818;
+        align-items: center;
+        user-select: none;
+        color: white;
+        z-index: 1;
+        position: sticky;
+
+
+        .btns {
+            display: flex;
+            width: 140px;
+            align-items: center;
+        }
+
+        .bbtn {
+            margin-left: 21px;
+            cursor: pointer;
+            transform: rotate(180deg);
+        }
+
+        .pbtn {
+            margin-left: 21px;
+            cursor: pointer;
+        }
+
+        .nbtn {
+            margin-left: 21px;
+            cursor: pointer;
+        }
+
+        .msclogo {
+            background-color: white;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            margin-left: 101px;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: black;
+        }
+
+        .mscname {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+            margin-bottom: 30px;
+
+        }
+
+        .artistbtn {
+            margin-left: 21px;
+            cursor: pointer;
+        }
+
+        .favoritebtn {
+            margin-left: 110px;
+            margin-top: 30px;
+        }
+
+    }
+
+}
