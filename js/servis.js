@@ -16,7 +16,7 @@ let plert = `Данынй сервис на стадии разработки, �
 }())
 
 
-const musics = [`Run Run Run`, `supersonic`, `Marmalade`, `crimson lada`, `Am I with you`, `scorpion`, `gift`, `finish`, `bad girl`, `She's close`, `dances`, `asphalt 8`];
+const musics = [`Run Run Run`, `supersonic`, `Marmalade`, `crimson lada`, `Am I with you`, `scorpion`, `gift`, `finish`, `bad girl`, `She's close`, `dances`, `asphalt 8`, `Rammstein Ausländer`]
 let musicNumber = Math.floor(Math.random() * musics.length)
 
 function loadMusic(music) {
